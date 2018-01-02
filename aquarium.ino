@@ -16,6 +16,7 @@ void setup() {
   pinMode(lampMain2, OUTPUT);
   pinMode(CO2, OUTPUT);
   pinMode(feedingBtn, INPUT);
+  
 }
 
 void morningStart(){
