@@ -1,21 +1,31 @@
   /******  VARIABLES  *****/
-  const int pumpMain = 0;
-  const int pumpAlt = 0;
-  const int lampMain1 = 0;
-  const int lampMain2 = 0;
-  const int CO2 = 0;
-  const int feedingBtn = 0;
-  const int feedingTime = 5;
+    const int pumpMain = 0;
+    const int pumpAlt = 0;
+    const int lampMain1 = 0;
+    const int lampMain2 = 0;
+    const int CO2 = 0;
+    const int feedingBtn = 0;
+    const int feedingTime = 5; /* in seconds */
+    const int autoTopUpPump = 0;
+    const int autoTopUpSensor = 0;
+    const int tempSensor = 0;
+    
   
 
 void setup() {
   // put your setup code here, to run once:
-  pinMode(pumpMain, OUTPUT);
-  pinMode(pumpAlt, OUTPUT);
-  pinMode(lampMain1, OUTPUT);
-  pinMode(lampMain2, OUTPUT);
-  pinMode(CO2, OUTPUT);
-  pinMode(feedingBtn, INPUT);
+  //OUTPUT
+    pinMode(pumpMain, OUTPUT);
+    pinMode(pumpAlt, OUTPUT);
+    pinMode(lampMain1, OUTPUT);
+    pinMode(lampMain2, OUTPUT);
+    pinMode(CO2, OUTPUT);
+    pinMode(autoTopUpPump, OUTPUT);
+
+  //INPUTS
+    pinMode(feedingBtn, INPUT);
+    pinMode(autoTopUpSensor, INPUT);
+    pinMode(tempSensor, INPUT);
   
 }
 
